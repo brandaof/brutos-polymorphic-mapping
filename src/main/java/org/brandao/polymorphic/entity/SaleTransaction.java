@@ -22,6 +22,14 @@ public class SaleTransaction {
 	)
 	private Service service;
 
+	public Service getService() {
+		return service;
+	}
+
+	public void setService(Service service) {
+		this.service = service;
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -36,14 +44,6 @@ public class SaleTransaction {
 
 	public void setPrice(Long price) {
 		this.price = price;
-	}
-
-	public Service getService() {
-		return service;
-	}
-
-	public void setService(Service service) {
-		this.service = service;
 	}
 
 }
