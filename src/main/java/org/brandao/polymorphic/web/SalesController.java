@@ -11,7 +11,6 @@ import org.brandao.brutos.annotation.Result;
 import org.brandao.brutos.annotation.Transient;
 import org.brandao.brutos.annotation.View;
 import org.brandao.brutos.annotation.web.RequestMethod;
-import org.brandao.brutos.annotation.web.ResponseErrors;
 import org.brandao.brutos.web.RequestMethodTypes;
 import org.brandao.brutos.web.WebFlowController;
 import org.brandao.polymorphic.entity.SaleTransaction;
@@ -21,7 +20,6 @@ import org.brandao.polymorphic.entityaccess.SalesMemoryEntityAccess;
 	@Action(value="/sales/add", view=@View("sales/edit")),
 	@Action(value="/sales", view=@View("sales/list"))
 })
-@ResponseErrors(rendered=false)
 public class SalesController {
 
 	@Inject
