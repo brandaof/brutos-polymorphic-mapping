@@ -23,7 +23,6 @@ import org.brandao.polymorphic.entityaccess.SalesMemoryEntityAccess;
 public class SalesController {
 
 	@Inject
-	@Transient
 	private SalesMemoryEntityAccess salesMemoryEntityAccess;
 
 	@Action("/")
@@ -60,7 +59,6 @@ public class SalesController {
 		WebFlowController.redirectTo("/sales");
 	}
 	
-	@Transient
 	public List<SaleTransaction> getAll(){
 		return this.salesMemoryEntityAccess.getAll();
 	}
